@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/page1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"/>
+    <title>ContiSap</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <img id="logo" src="../assets/logo.svg" width="183" />
+        <input id="barra-pesquisa" type="text" placeholder="Pesquisar" />
+      </ul>
+    </nav>
+
+    <section>
+      <div id="box1">
+        
+        <a href="../index.html">Voltar</a>
+        
+        <h1>Como Ver Materiais em Estoque no SAP</h1>
+
+  <h2>Objetivo</h2>
+  <p>Este passo a passo demonstra como visualizar a quantidade de materiais em estoque no SAP.</p>
+
+  <h2>Pré-requisitos</h2>
+  <ul>
+    <li>Acesso ao sistema SAP.</li>
+    <li>Conhecimento da transação MMBE.</li>
+  </ul>
+
+  <h2>Passo a Passo</h2>
+  <ol>
+    <li>
+      <h3>Acessar a transação MMBE</h3>
+      <p>Na barra de transações, digite <strong>MMBE</strong> e pressione Enter.</p>
+    </li>
+    <li>
+      <h3>Inserir o código do material</h3>
+      <p>No campo <strong>Material</strong>, digite o código do material que você deseja consultar.
+        Se você não souber o código do material, pode usar a pesquisa para encontrá-lo ou <a href="page2.html">Clique Aqui</a>.
+      </p>
+    </li>
+    <li>
+      <h3>Selecionar o centro de estoque</h3>
+      <p>No campo <strong>Centro</strong>, digite o código do centro de estoque que você deseja consultar.
+        Se você não souber o código do centro de estoque, pode usar a pesquisa para encontrá-lo.
+      </p>
+    </li>
+    <li>
+      <h3>Visualizar as informações do material</h3>
+      <p>Pressione Enter para visualizar as informações do material.
+        A tela exibirá diversas informações sobre o material, incluindo a quantidade disponível em estoque.
+        A quantidade disponível em estoque é exibida no campo <strong>Estoque livre</strong>.
+      </p>
+    </li>
+    <li>
+      <h3>Analisar as informações do material</h3>
+      <p>Você pode analisar outras informações do material, como:</p>
+      <ul>
+        <li><strong>Estoque em Transferência:</strong> Quantidade de material que está em processo de transferência para outro centro de estoque.</li>
+        <li><strong>Estoque Reservado:</strong> Quantidade de material que está reservada para um pedido de venda ou produção.</li>
+        <li><strong>Estoque Bloqueado:</strong> Quantidade de material que está bloqueada para uso.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Exportar os dados para um arquivo (opcional)</h3>
+      <p>Se você desejar exportar os dados para um arquivo, clique no botão <strong>Exportar</strong>.
+        Você pode escolher exportar os dados para um arquivo Excel, CSV ou outro formato.
+      </p>
+    </li>
+  </ol>
+
+  <h2>Dicas</h2>
+  <ul>
+    <li>Você pode usar a transação <strong>MB52</strong> para visualizar a disponibilidade de um material em diferentes centros de estoque e períodos.</li>
+    <li>Você pode usar a transação <strong>MM03</strong> para visualizar o cadastro completo de um material.</li>
+  </ul>
+  <br>
+  <button id="imprimir" onclick="imprimirPagina()">Imprimir Página</button>
+  <br>
+  </body>
+    </section>
+    <script>
+      function imprimirPagina() {
+        window.print();
+      }
+    </script>
+    
+</html>

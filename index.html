@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ContiSap</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <img id="logo" src="assets/logo.svg" width="183" />
+        <input
+          id="barra-pesquisa"
+          type="text"
+          placeholder="Pesquisar"
+          onkeyup="search()"
+        />
+      </ul>
+    </nav>
+    <ol id="list">
+      <li class="topico">
+        <a href="pages/page1.html">
+          <div id="how">
+            <p id="titulo">Como Ver Materiais em Estoque no SAP</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="pages/page2.html">
+          <div id="how">
+            <p id="titulo">Como Encontrar o Código do Material no SAP</p>
+          </div>
+        </a>
+      </li>
+    </ol>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

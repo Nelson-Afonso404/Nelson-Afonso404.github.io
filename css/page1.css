@@ -1,0 +1,59 @@
+body {
+  font-family: inter;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 68px;
+  background-color: #ffb800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-right: 10px; /* Adicione margem direita se desejar espaço entre o logotipo e a barra de pesquisa */
+}
+
+#logo {
+  margin-right: 10px; /* Adicione margem direita se desejar espaço entre o logotipo e a barra de pesquisa */
+}
+
+#barra-pesquisa {
+  position: absolute;
+  border-radius: 10px;
+  height: 34px;
+  width: 288px;
+  right: 20px;
+  border: none;
+  padding-left: 10px;
+}
+section {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+a {
+  color: black;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+#box1 {
+  position: absolute;
+}
+#imprimir {
+  padding: 10px;
+  background-color: #ffb800;
+  border: none;
+  border-radius: 10px;
+}

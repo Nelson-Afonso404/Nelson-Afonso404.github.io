@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/page1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"/>
+    <title>ContiSap</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <img id="logo" src="../assets/logo.svg" width="183" />
+        <input id="barra-pesquisa" type="text" placeholder="Pesquisar" />
+      </ul>
+    </nav>
+
+    <section>
+      <div id="box1">
+        <a href="../index.html">Voltar</a>
+        <h1>Como Encontrar o Código do Material no SAP</h1>
+
+  <h2>Objetivo</h2>
+  <p>Este passo a passo demonstra como encontrar o código do material no SAP caso você não o tenha.</p>
+
+  <h2>Pré-requisitos</h2>
+  <ul>
+    <li>Acesso ao sistema SAP.</li>
+    <li>Conhecimento da transação MM03.</li>
+  </ul>
+
+  <h2>Passo a Passo</h2>
+  <ol>
+    <li>
+      <h3>Acessar a transação MM03</h3>
+      <p>Na barra de transações, digite <strong>MM03</strong> e pressione Enter.</p>
+    </li>
+    <li>
+      <h3>Preencher os campos de pesquisa</h3>
+      <p>Você pode preencher um ou mais campos para filtrar a pesquisa.
+        Alguns dos campos que você pode usar são:</p>
+      <ul>
+        <li><strong>Descrição do material:</strong> Digite parte da descrição do material que você procura.</li>
+        <li><strong>Grupo de materiais:</strong> Selecione o grupo de materiais ao qual o material pertence.</li>
+        <li><strong>Classe de material:</strong> Selecione a classe de material ao qual o material pertence.</li>
+        <li><strong>Setor:</strong> Selecione o setor ao qual o material pertence.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Executar a pesquisa</h3>
+      <p>Pressione Enter para executar a pesquisa.
+        A tela exibirá uma lista de materiais que correspondem aos critérios de pesquisa.</p>
+    </li>
+    <li>
+      <h3>Selecionar o material desejado</h3>
+      <p>Clique duas vezes no material que você deseja visualizar.
+        O código do material será exibido no campo <strong>Material</strong> na tela de detalhes do material.</p>
+    </li>
+  </ol>
+
+  <h2>Dicas</h2>
+  <ul>
+    <li>Se você não souber quais campos de pesquisa preencher, pode usar a pesquisa avançada.</li>
+    <li>Você pode usar a transação <strong>MB52</strong> para visualizar a disponibilidade de um material em diferentes centros de estoque e períodos.</li>
+    <li>Você pode usar a transação <strong>MM02</strong> para alterar o cadastro de um material.</li>
+  </ul>
+
+  <h2>Observações</h2>
+  <p>O conteúdo deste passo a passo pode variar de acordo com a versão do SAP e a configuração do sistema.
+    É recomendável consultar a documentação oficial do SAP para obter informações mais detalhadas.</p>
+
+  <h2>Exemplo</h2>
+  <p>Vamos supor que você está procurando uma cadeira giratória preta.</p>
+  <ul>
+    <li>Preencha os campos de pesquisa com:</li>
+      <ul>
+        <li><strong>Descrição do material:</strong> Cadeira giratória preta</li>
+        <li><strong>Grupo de materiais (opcional):</strong> Móveis (se você souber)</li>
+      </ul>
+    <li>Execute a pesquisa.</li>
+    <li>Selecione o material desejado (Cadeira giratória preta) e visualize o código do material (A000001).</li>
+  </ul>
+    </section>
+  </body>
+</html>
